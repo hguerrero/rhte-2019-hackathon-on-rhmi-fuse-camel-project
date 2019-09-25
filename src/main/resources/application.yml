@@ -1,0 +1,33 @@
+camel:
+  springboot:
+    # The Camel context name
+    name: Fuse API
+  component:
+    servlet:
+      mapping:
+        contextPath: /*
+
+# Binding health checks to a different port
+management:
+  port: 8081
+
+# disable all management enpoints except health
+endpoints:
+  enabled: false
+  health:
+    enabled: true
+
+#postgresql specific
+postgresql:
+  service:
+    hostname: ${PG_HOSTNAME:postgresql.city-of-losangeles.svc}
+    database: ${PG_DATABASE:city-info}
+    username: ${PG_USERNAME:evals01}
+    password: ${PG_PASSWORD:Password1}
+
+#Database configuration
+spring:
+  datasource:
+    url: jdbc:postgresql://${postgresql.service.hostname}:5432/${postgresql.service.database}
+    username: ${postgresql.service.username}
+    password: ${postgresql.service.password}
