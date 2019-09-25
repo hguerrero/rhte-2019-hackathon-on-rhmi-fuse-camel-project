@@ -1,7 +1,7 @@
-# Camel based implementation of the _New API_ API
+# Camel based implementation of the _Fuse_ API
 
 ## API Description ##
-A brand new API with no content.  Go nuts!
+A brand new API with sample content.  Go nuts!
 
 ### Building
 
