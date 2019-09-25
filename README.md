@@ -1,4 +1,4 @@
-# Camel based implementation of the _Fuse_ API
+# Fuse based implementation of the _City Info_ API
 
 ## API Description ##
 A brand new API with sample content.  Go nuts!
