@@ -22,7 +22,7 @@ postgresql:
   service:
     hostname: ${PG_HOSTNAME:postgresql.city-of-losangeles.svc}
     database: ${PG_DATABASE:city-info}
-    username: ${PG_USERNAME:evals01}
+    username: ${PG_USERNAME:evalsNN}
     password: ${PG_PASSWORD:Password1}
 
 #Database configuration
